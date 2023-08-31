@@ -21,13 +21,13 @@ export class Driver {
   @Column({ length: 200, nullable: true })
   name: string;
 
-  @Column({ length: 150, nullable: true, collation: 'utf8mb4_0900_ai_ci' })
+  @Column({ length: 150, nullable: true, collation: 'utf8mb3_general_ci' })
   reference: string;
 
-  @Column({ length: 200, nullable: true, collation: 'utf8mb4_0900_ai_ci' })
+  @Column({ length: 200, nullable: true, collation: 'utf8mb3_general_ci' })
   phone: string;
 
-  @Column({ length: 200, nullable: true, collation: 'utf8mb4_0900_ai_ci' })
+  @Column({ length: 200, nullable: true, collation: 'utf8mb3_general_ci' })
   neighborhood: string;
 
   @Column({ nullable: true, type: 'timestamp' })

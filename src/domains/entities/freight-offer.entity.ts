@@ -21,7 +21,7 @@ export class FreightOffer {
   freight: Freight;
 
   @ManyToOne(() => Driver, (driver) => driver.offers)
-  @JoinColumn({ name: 'driver_id', referencedColumnName: 'id' })
+  // @JoinColumn({ name: 'driver_id', referencedColumnName: 'id' })
   driver: Driver;
 
   @Column({ nullable: true })
